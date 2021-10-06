@@ -71,7 +71,7 @@ const llenarEntrada = async (data = []) => {
       let parte_3 = `
         </div>
       </div>
-      <a href="#" class="enlace">editar</a>
+      
     </div>
     `
       invitaciones += parte_1 + invitados + parte_3
