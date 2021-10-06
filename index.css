@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title a {
+  font-size: 1.2rem;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  transition: .3s all ease;
+}
+
+.title a:hover {
+  color: black;
+  background: white;
+}
+
+.no-entradas {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.list-invitaciones,
+.invitados {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.invitacion {
+  min-width: 250px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px 15px;
+}
+
+.cod {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.invitados {
+  flex-flow: row wrap;
+  gap: 15px !important;
+}
+
+.invitado {
+  border: 1px solid lightgray;
+  padding: 5px;
+  min-width: 200px;
+}
+
+.enlace {
+  display: block;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 10px auto;
+  margin-top: 15px;
+}
+
+.estado,
+.opciones {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3px;
+  font-size: 1.2rem;
+}
+

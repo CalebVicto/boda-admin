@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=.0">
+  <title>AÑADIR INVITACION</title>
+  <link rel="stylesheet" href="add.css">
+</head>
+
+<body>
+
+  <div class="loading">
+    <div class='spinner'></div>
+  </div>
+
+  <div class="title">AÑADIR INVITACIÓN</div>
+  <form id="inv">
+    <a href="#" id="add_btn" class="add_btn">AÑADIR INVITACION</a>
+    <div class="input-d">
+      <label for="cod_uniq">Codigo Único:</label>
+      <input type="text" name="cod_uniq" id="cod_uniq" autocomplete="off">
+    </div>
+    <div class="invitado">
+      <label for="inv">Invitado :</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off">
+      <span>Opciones de Asistencia:</span>
+      <div class="radios">
+        <label for="tipo">Solo Presencial
+          <input type="radio" name="tipo" id="tipo_1" value="">
+        </label>
+        <label for="tipo_2">Solo Virtual
+          <input type="radio" name="tipo" id="tipo_2" value="2">
+        </label>
+        <label for="tipo_3">Presencial y Virtual
+          <input type="radio" name="tipo" id="tipo_3" value="3">
+        </label>
+      </div>
+    </div>
+    <a href="#" id="add" class="add">Añadir Invitado+</a>
+  </form>
+
+  <div class="invitados" id="invitados">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
+    integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="add.js"></script>
+
+</body>
+
+</html>
