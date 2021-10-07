@@ -45,13 +45,13 @@ const llenarEntrada = async (data = []) => {
             ${e.estado == 4
                 ? 'No Asiste'
                 : (
-                  e.tipo == 3
+                  e.estado == 3
                     ? 'Asiste Virtual'
                     : (
-                      e.tipo == 2
+                      e.estado == 2
                         ? 'Asiste Presencial'
                         : (
-                          e.tipo == 1
+                          e.estado == 1
                             ? 'Por confirmar'
                             : ''
                         )
